@@ -52,7 +52,7 @@ pipeline_artifacts_bucket = s3.Bucket(
         destination_bucket_name=logging_bucket.id,
         log_file_prefix='log/'
     ),
-    tags=[
+    tags= [
         s3.BucketTagArgs(key='foo', value='bar')
     ]
 )
